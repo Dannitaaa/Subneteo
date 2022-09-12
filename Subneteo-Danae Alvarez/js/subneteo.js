@@ -87,9 +87,7 @@ function verificarMascara(mascara, classeIp) {
   return false;
 }
 
-/* 
-   Operação AND entre IP e Máscara
-*/
+
 function verificarRede(ip, mascara) {
   ip = converterDecimalParaBinarioQuatroOctetos(ip);
   mascara = converterDecimalParaBinarioQuatroOctetos(mascara);
@@ -110,9 +108,7 @@ function verificarRede(ip, mascara) {
   return converteBinarioParaDecimalQuatroNumeros(rede);
 }
 
-/* 
-    Operação OR entre IP e o NOT da Máscara
-*/
+
 function verificarBroadcast(ip, mascara) {
   ip = converterDecimalParaBinarioQuatroOctetos(ip);
   mascara = negacaoBinariaQuatroOctetos(
